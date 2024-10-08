@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander & Explore!</title>
+    <!-- Google Fonts for styling text -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link to the custom stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Falling Leaves Animation Container -->
+    <div class="falling-leaves">
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+    </div>
+
+    <!-- Header Section with Navigation -->
+    <header class="custom-header">
+        <div class="container">
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <a class="navbar-brand" href="#home">Wander & Explore!</a>
+                
+                </button>
+                <div class="navbar-menu" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/destinations.html">Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+                    </ul>
+                    <!-- Search Bar for site navigation -->
+                    <form class="search-bar" role="search">
+                        <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+                        <button class="search-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section showcasing the main image -->
+    <section id="hero" class="hero">
+        <img src="images/HeroImage.jpg" class="hero-image" alt="Hero Image">
+        <div class="container hero-content">
+            <h1>Discover the World</h1>
+            <p class="lead">Explore breathtaking destinations through my journeys and experiences!</p>
+            <a href="pages/destinations.html" class="btn btn-primary">Explore Destinations</a>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <div class="row">
+            <div class="col-8">
+                <!-- Featured Posts Section -->
+                <section id="featured-posts" class="featured-posts">
+                    <h2 class="section-title">Featured Adventures</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card">
+                                <img src="images/Siquijor/Siquijor.jpg" class="card-img-top" alt="Featured destination in Siquijor">
+                                <div class="card-body">
+                                    <h5 class="card-title">Exploring the Hidden Gems of Siquijor!</h5>
+                                    <p class="card-text">Siquijor, an enchanting island in the Philippines, often referred to as the “Mystical Island,” is a captivating destination known for its natural beauty, rich culture, and enchanting legends. Nestled in the central Visayas region of the Philippines, this island is a treasure trove of experiences waiting to be uncovered. From pristine beaches and lush forests to stunning waterfalls and vibrant marine life, Siquijor is a paradise for adventurers and relaxation seekers alike. Join us as we delve into the hidden gems that make Siquijor a must-visit destination for travelers seeking both adventure and tranquility.</p>
+                                    <a href="pages/siquijor.html" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card">
+                                <img src="images/Palawan/Palawan.jpg" class="card-img-top" alt="Featured destination in Palawan">
+                                <div class="card-body">
+                                    <h5 class="card-title">A Week in Paradise: Discovering Palawan's Wonders!</h5>
+                                    <p class="card-text">Embark on a week-long adventure through Palawan, a breathtaking archipelago renowned for its stunning landscapes and vibrant ecosystems. This tropical paradise is often celebrated as one of the most beautiful islands in the world, offering a unique blend of adventure and relaxation. From the majestic limestone cliffs of El Nido to the serene lagoons of Coron, each day unveils new treasures.</p>
+                                    <a href="pages/palawan.html" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Recent Posts Section -->
+                <section id="recent-posts" class="recent-posts">
+                    <h2 class="section-title">Recent Posts</h2>
+                    <div class="card horizontal">
+                        <img src="images/Cebu/Boodle.jpg" class="card-img-left" alt="Recent post">
+                        <div class="card-body">
+                            <h5 class="card-title">Experience Boodle Fight in Cebu!</h5>
+                            <p class="card-text">Dive into Cebu's vibrant food culture with a traditional boodle fight, where a feast is laid out on banana leaves, allowing you to enjoy a delightful meal with friends and family. This unique dining experience emphasizes camaraderie and the joy of sharing delicious local dishes, from grilled meats to fresh seafood, all accompanied by an array of traditional condiments. Join us as we explore the origins of the boodle fight and the best places to experience it in Cebu!</p>
+                            <a href="pages/cebu.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                
+                    <div class="card horizontal">
+                        <img src="images/Palawan/palawan2.jpg" class="card-img-left" alt="Sunset in Palawan">
+                        <div class="card-body">
+                            <h5 class="card-title">Experience the Stunning Sunset in El Nido!</h5>
+                            <p class="card-text">Witness the breathtaking beauty of sunsets in Palawan, where the sky transforms into a canvas of vibrant colors. El Nido is renowned for its stunning vistas and serene atmosphere, making it the perfect destination for travelers seeking relaxation and inspiration. As the sun dips below the horizon, the vibrant hues of orange, pink, and purple reflect on the water, creating a magical scene. Join us as we uncover the best spots to catch these unforgettable sunsets and tips for making the most of your visit to this tropical paradise!</p>
+                            <a href="pages/palawan.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!-- Sidebar Section with additional information -->
+            <aside class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">About Us</h3>
+                        <div class="video-container">
+                            <video width="300" height="300" autoplay loop muted playsinline>
+                                <source src="videos/Author.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="card-text">Wander & Explore is your go-to travel blog, dedicated to sharing inspiring journeys and unforgettable experiences from around the globe. Whether it's hidden gems, cultural encounters, or scenic adventures, we aim to spark your wanderlust. </p>
+                        <a href="pages/about.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+       
+
+
+                <!-- Gallery Section showcasing images -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Gallery</h3>
+                        <div class="gallery-grid">
+                            <img src="images/Cebu/cebu.jpg" class="gallery-img" alt="Gallery image 1">
+                            <img src="images/Palawan/palawan2.jpg" class="gallery-img" alt="Gallery image 2">
+                            <img src="images/Cebu/cebu2.jpg" class="gallery-img" alt="Gallery image 3">
+                            <img src="images/Palawan/palawan3.jpg" class="gallery-img" alt="Gallery image 4">
+                        </div>
+                        <a href="pages/gallery.html" class="btn btn-outline">View More</a>
+                    </div>
+                </div>
+
+                <!-- Featured Videos Section -->
+                <section id="featured-videos" class="featured-videos">
+                    <h2 class="section-title">Featured Videos</h2>
+                    <div class="video-container">
+                        <video width="300" height="300" controls>
+                            <source src="images/Siquijor/siquijor.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <video width="300" height="300" controls>
+                            <source src="videos/Video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <a href="https://www.youtube.com/@WanderExplore-m2i" class="btn btn-outline">Watch More Videos</a>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+<!-- Footer Section with contact information -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Wander & Explore!</h3>
+                <p>Inspiring your next adventure,<br> one story at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> your-email@example.com</a></li>
+                    <li><a href="tel:+123456789"><i class="fas fa-phone"></i> +123 456 789</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Wanderland</a></li>
+                </ul>
+            </div>
+           
+            <div class="footer-section">
+                <h3>Connect with Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <p class="copyright">&copy; 2024 Wander & Explore. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
