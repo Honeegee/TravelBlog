@@ -1,5 +1,4 @@
 const destinations = {
-    'home': 'index.html',
     'doha': 'pages/doha.html',
     'thailand': 'pages/thailand.html',
     'bohol': 'pages/bohol.html',
