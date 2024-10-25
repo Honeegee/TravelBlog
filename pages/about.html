@@ -3,86 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.png" type="image/png"> 
+    <!-- meta tags for SEO Optimization -->
+    <meta name="description" content="Wander & Explore is a travel blog that inspires wanderlust and helps fellow travelers discover hidden gems worldwide.">
+    <meta name="keywords" content="travel, adventure, culture, sustainability, culinary experiences, exploration, travel tips, hidden gems, responsible tourism, photography, travel guides, outdoor adventures, wanderlust, travel stories">
+    <meta name="robots" content="index, follow">
     <title>About Us - Wander & Explore!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/video-styles.css"> <!-- New video styles -->
 </head>
 <body>
-    <header id="header"></header>
-    
-    <main class="container">
-        <h1>About Wander & Explore!</h1>
 
-      <!-- Video Container -->
-        <div class="video-container-aboutus">
-            <video controls autoplay loop>
-                <source src="../videos/AboutUs.mp4" type="video/mp4">
+  <!-- Header -->
+  <header class="custom-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="javascript:void(0);" onclick="navigateToHome()">Wander & Explore!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <form class="d-flex search-bar" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+    
+    <main class="container-fluid px-0">
+        <section id="hero" class="mb-5 position-relative">
+            <video autoplay loop muted playsinline class="w-100">
+                <source src="../videos/Author.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
+            <div class="hero-content container text-center position-absolute top-50 start-50 translate-middle">
+                <h1 class="playfair-heading">About Wander & Explore!</h1>
+                <p class="lead">Inspiring adventures, one journey at a time</p>
+            </div>
+        </section>
 
-        
-        <div class="mission-box">
-            <h2>Our Mission</h2>
-            <p>To inspire wanderlust and help fellow travelers explore the world's hidden gems, making every adventure unforgettable.</p>
-        </div>
-        
-        <section>
-            <h3>What We Offer</h3>
-            <ul class="offer-list">
-                <li><strong>In-Depth Destination Guides:</strong> Well-researched guides for near and far adventures.</li>
-                <li><strong>Travel Tips & Hacks:</strong> Practical advice for smooth and enjoyable travels.</li>
-                <li><strong>Personal Travel Stories:</strong> Authentic experiences shared by our community.</li>
-                <li><strong>Sustainable Travel:</strong> Promoting responsible practices to protect our world.</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h3>Our Journey</h3>
-            <p>Founded by travel enthusiasts, Wander & Explore has grown from a passion project into a thriving community where travelers share their love for exploring new places, cultures, and experiences.</p>
-        </section>
-        
-        <section class="authors">
-            <h3>Meet Our Authors</h3>
-            <div class="author-grid">
-                <div class="author-card">
-                    <img src="/api/placeholder/150/150" alt="Emma Traveller" class="author-img">
-                    <h4>Emma Traveller</h4>
-                    <p class="author-role">Adventure Enthusiast</p>
-                    <p>Emma's passion for off-the-beaten-path destinations and adrenaline-pumping activities brings a thrilling edge to our content.</p>
+        <section class="container content-section my-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 mission-box">
+                        <div class="card-body">
+                            <h2 class="card-title">Our Mission</h2>
+                            <p class="card-text">To inspire wanderlust and help fellow travelers explore the world's hidden gems, making every adventure unforgettable.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="author-card">
-                    <img src="/api/placeholder/150/150" alt="Alex Culturist" class="author-img">
-                    <h4>Alex Culturist</h4>
-                    <p class="author-role">Culture & History Buff</p>
-                    <p>Alex's deep dive into local customs and historical contexts provides rich, insightful perspectives on every destination.</p>
-                </div>
-                <div class="author-card">
-                    <img src="/api/placeholder/150/150" alt="Sam Foodie" class="author-img">
-                    <h4>Sam Foodie</h4>
-                    <p class="author-role">Culinary Explorer</p>
-                    <p>Sam's culinary adventures and local food recommendations add a delicious flavor to our travel guides.</p>
-                </div>
-                <div class="author-card">
-                    <img src="/api/placeholder/150/150" alt="Jordan Eco" class="author-img">
-                    <h4>Jordan Eco</h4>
-                    <p class="author-role">Sustainable Travel Advocate</p>
-                    <p>Jordan's expertise in eco-friendly travel helps our readers make responsible choices and minimize their environmental impact.</p>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Our Travel Philosophy</h2>
+                                <p>At Wander & Explore, we believe that travel is more than just visiting new places. It's about immersing yourself in different cultures, creating lasting memories, and growing as individuals. We strive to promote responsible and sustainable travel practices while encouraging our readers to step out of their comfort zones and embrace the unknown.</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Our Journey</h2>
+                            <p class="card-text">Founded by travel enthusiasts, Wander & Explore has grown from a passion project into a thriving community where travelers share their love for exploring new places, cultures, and experiences.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section class="join-community">
-            <h3>Join the Wander & Explore Community</h3>
-            <p>Connect with like-minded travelers, share your experiences, and get inspired to explore the world around you.</p>
-            <a href="#" class="cta-button">Join Now</a>
-        </section>
+
+       
+<!-- Meet Our Authors Section -->
+<section class="bg-custom py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 playfair-heading section-title">Meet Our Authors</h2>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="card author-card h-100">
+                    <div class="row g-0 align-items-center">
+                        <!-- Author Image Column -->
+                        <div class="col-md-3 text-center">
+                            <div class="author-img-container p-3">
+                                <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img rounded-circle img-fluid">
+                            </div>
+                        </div>
+                        <!-- Author Text Column -->
+                        <div class="col-md-9 d-flex align-items-center">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Honey Grace Denolan</h4>
+                                <p class="card-subtitle mb-2">Adventure Enthusiast</p>
+                                <p class="card-text">
+                                    Hello! I’m Honey. My journey has taken me from a background in Chemistry to a passion for IT. Along the way, I’ve embraced opportunities that allow me to explore new places and cultures. My fluency in Mandarin Chinese has been especially rewarding, as it has enabled me to travel as a translator and experience rich cultural exchanges.
+                                 
+                                    Recently, I took up freediving, which has allowed me to discover the peaceful beauty of the underwater world. This experience has deepened my connection with nature and the importance of balance in life.
+                                 
+                                    I believe in the unique connection between technology and travel, and I hope to inspire others to explore both in their own adventures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+
+            <div class="col-12">
+                <div class="card author-card h-100">
+                    <div class="row g-0 align-items-center">
+                        <!-- Author Image Column -->
+                        <div class="col-md-3 text-center">
+                            <div class="author-img-container p-3">
+                                <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img rounded-circle img-fluid">
+                            </div>
+                        </div>
+                        <!-- Author Text Column -->
+                        <div class="col-md-9 d-flex align-items-center">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Alex Culturist</h4>
+                                <p class="card-subtitle mb-2">Culture & History Buff</p>
+                                <p class="card-text">Alex's deep dive into local customs and historical contexts provides rich, insightful perspectives on every destination.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card author-card h-100">
+                    <div class="row g-0 align-items-center">
+                        <!-- Author Image Column -->
+                        <div class="col-md-3 text-center">
+                            <div class="author-img-container p-3">
+                                <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img rounded-circle img-fluid">
+                            </div>
+                        </div>
+                        <!-- Author Text Column -->
+                        <div class="col-md-9 d-flex align-items-center">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Sam Foodie</h4>
+                                <p class="card-subtitle mb-2">Culinary Explorer</p>
+                                <p class="card-text">Sam's culinary adventures and local food recommendations add a delicious flavor to our travel guides.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card author-card h-100">
+                    <div class="row g-0 align-items-center">
+                        <!-- Author Image Column -->
+                        <div class="col-md-3 text-center">
+                            <div class="author-img-container p-3">
+                                <img src="../images/Authors/Honey.jpg" alt="Honey Grace Denolan" class="author-img rounded-circle img-fluid">
+                            </div>
+                        </div>
+                        <!-- Author Text Column -->
+                        <div class="col-md-9 d-flex align-items-center">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Jordan Eco</h4>
+                                <p class="card-subtitle mb-2">Sustainable Travel Advocate</p>
+                                <p class="card-text">Jordan's expertise in eco-friendly travel helps our readers make responsible choices and minimize their environmental impact.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
+
+   
+
+    <!-- Falling Leaves Animation -->
+    <div class="falling-leaves">
+        <div class="leaf"></div>
+
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
     
-    <footer id="footer"></footer>
-    
-    <script src="../js/script.js"></script>
+<!-- Scripts -->
+<script src="../js/script.js"></script>
+<script src="../js/searchpages.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
+
