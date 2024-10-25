@@ -44,7 +44,7 @@ function createLeaves() {
     const fallingLeavesContainer = document.querySelector('.falling-leaves');
 
     // Create 5 leaves at a time
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
         const leaf = document.createElement('div');
         leaf.className = 'leaf';
         leaf.style.left = Math.random() * 200 + 'vw'; // Random horizontal position
