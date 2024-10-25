@@ -43,14 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
 function createLeaves() {
     const fallingLeavesContainer = document.querySelector('.falling-leaves');
 
-    const numberOfLeaves = Math.floor(Math.random() * 2) + 1; // Randomly generates 1 to 2
-
-    for (let i = 0; i < numberOfLeaves; i++) {
+    // Create 5 leaves at a time
+    for (let i = 0; i < 3; i++) {
         const leaf = document.createElement('div');
         leaf.className = 'leaf';
         leaf.style.left = Math.random() * 200 + 'vw'; // Random horizontal position
-        leaf.style.animationDuration = '20s'; // Ensure uniform duration
-        leaf.style.opacity = Math.random(); // Random opacity for variation
+        
+        // Vary the animation duration slightly for more natural effect
+        leaf.style.animationDuration = (18 + Math.random() * 4) + 's'; // 18-22 seconds
+        
+        // Increased opacity range for more visibility
+        leaf.style.opacity = 0.1 + (Math.random() * 0.6); // 0.4 to 1.0
 
         fallingLeavesContainer.appendChild(leaf);
 
@@ -61,9 +64,8 @@ function createLeaves() {
     }
 }
 
-// Create leaves every 5 seconds
-setInterval(createLeaves, 7000);
-
+// Slightly faster interval for more continuous effect
+setInterval(createLeaves, 8000);
 
 
 
